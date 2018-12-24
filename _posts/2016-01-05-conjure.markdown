@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Conjure'
+date: 2016-01-05 17:40:28 -0400
+category: projects
+tags: design ios development
+image: projects/conjure/header.jpg
+---
+
+Conjure is my second iOS app, a Trading Card Game assistant designed for competitive Magic: The Gathering players. As I would look around the game shops, I saw people eschewing game tracking apps in favor of pencil and paper, mostly because the apps weren't didn't allow competitive players to see all the data they wanted at a glance. That became my inspiration for the app, utilizing the phone's capabilities to display lots of changing information and to hold a number of statistics in memory.
+
+Conjure was designed around how I would keep track of my games, and how I noticed a lot of other competitive players keeping score during games. Now you can have an easy view of how each match progresses, while it's happening. The full version includes unlimited deck slots, match history, 9 additional themes and the ability to save format defaults. Conjure is a passion project of mine, and all the money I earn helps me keep working on it (and buy more cards).
+Living and Learning
+
+I wrote about my experience learning Swift and developing the app, detailing the progress over the months and various design decisions. You can read about the entire process [here]({{ site.baseurl }}{% post_url 2016-01-08-developing-conjure %}). If you have any questions about the development of Conjure, feature requests or bug reports please send them to me!

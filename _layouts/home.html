@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include header.html %}
+  </head>
+
+  <body>
+    <div class="header">
+      <canvas class="header-canvas"> <p>Luv circles and lines</p> </canvas> {%
+      include navigation.html %}
+    </div>
+
+    <div class="container">
+      <div>
+        <h1>{{ page.headline }}</h1>
+        {{ content }}
+      </div>
+
+      <div class="list">
+        <span class="font-small metadata">Recently updated</span>
+        <ul class="list-columns">
+          {% for post in site.posts limit:20 %}
+          <li class="{{ post.category }}">
+            <a href="{{ post.url }}">{{ post.title }}</a
+            ><span class="font-small metadata">
+              - {{ post.date | date_to_string }}</span
+            >
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- <span>See all pages</span> -->
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="/assets/canvas.js"></script>
+  </body>
+</html>

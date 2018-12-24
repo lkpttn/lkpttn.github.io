@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" /> <title>Developing Conjure | Friend of Pixels</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<link
+  href="https://fonts.googleapis.com/css?family=Fira+Sans|Inknut+Antiqua"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/assets/reset.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+
+  </head>
+
+  <body>
+    <div id="header" class="header"><div class="container">
+  <div class="navigation">
+    <a href="/"
+      ><img class="logo" src="/assets/FoPxSmall.png"
+    /></a>
+  </div>
+  <ul class="navigation-links">
+    <!-- <li><a href="/about/">About</a></li> -->
+  </ul>
+</div>
+</div>
+    <div id="content">
+      <div class="post-header container">
+        
+
+        <div class="post-title">
+          <h1>Developing Conjure</h1>
+          <span class="metadata font-small">
+            08 January 2016 
+            
+          </span>
+        </div>
+      </div>
+
+      <div class="container"><p>I recently launched my second iOS app, Conjure, a game assistant for Magic: The Gathering players. It allows users to maintain and track a list of decks, keep a match history and review their games. When I began working on it, I had never written Swift code before and had only a conceptual understanding of <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC software development</a>. I knew I would want to look back on the process, so I documented my progress learning Swift, designing and developing in tandem. The Swift code is open-source and available on <a href="https://github.com/lkpttn/Conjure">Github</a>.</p>
+
+<h3 id="research-and-problem-specification">Research and Problem Specification</h3>
+
+<p><a href="http://magic.wizards.com/">Magic: The Gathering</a> is a card game where players bring a deck of spells, creatures and resources to battle against other players and reduce their life total from 20 to 0 (<a href="http://mtgsalvation.gamepedia.com/Winning_and_losing">usually</a>). Players build their decks from sets of cards that are released multiple times every year, and are always building new decks or altering existing archetypes.</p>
+
+<p>I committed the first bit of code to Github in July, but I had spent a couple weeks noodling this issue I had noticed while playing Magic at some local shops. Most Magic life-counter apps show two large numbers with some tap able buttons to increase or decrease the number. The design led me to believe the intended setup was putting the device between the two players on the table so they were each interacting with their individual life totals. This wasn’t reflecting how I saw most players record their games, which was more often two columns on a piece of paper where they tracked both players.</p>
+
+<p>This seemed like a better system for an app to me and leaned towards more serious players, which I felt were underserved by current apps.</p>
+
+<h3 id="swift-2">Swift 2</h3>
+
+<p>The last time I jumped into Xcode I found myself struggling stay afloat in Objective-C, with only the faintest notion of app architecture. I managed to get by with the excellent <a href="https://www.bignerdranch.com/we-write/">Big Nerd Ranch</a> Objective-C textbook but it wasn’t exactly a grand slam for someone with no real programming experience. Two years later, after working in proximity with a number of actual software engineers I have a much more nuanced understanding of programming and set off with the Apple introduction to Swift.</p>
+
+<p><a href="https://developer.apple.com/library/prerelease/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html">The Swift Starter Guide</a> is such an excellent resource, I would have no problem recommending it to anyone interested in Swift development. It got me set up with a basic app, passing data around between view controllers, constructing views both visually in Interface Builder and programmatically, and utilizing almost all the different basic data types.</p>
+
+<p>The language itself flows well and feels readable when skimming statements to make sure your intent is clear. I found this to be a hugely welcome change from the previous bewilderment I experienced trying to place all the requisite brackets in Objective-C.</p>
+
+<p>It’s hard to overstate the effect this modern syntax had on development. Documentation was easy to read, stackOverflow questions were plentiful and clear. By the time I submitted the app, I was able to solve my own crashes, construct efficient logic statements and functions; a far cry from my previous development efforts. Even now as I look at all the source code, I can roughly place where in the timeline I developed each feature based on how well it’s constructed and the number of comments I had to leave myself like “Fix this bullshit math”.</p>
+
+<p>Swift 2 is a very cautious language, opting for safety when dealing with unknown variables rather than opening nil values and crashing the application. This philosophy greatly improved the quality of my code by forcing me to construct my view controllers and models appropriately rather than face potential crashes from rookie shortcuts.</p>
+
+<h3 id="the-design-loop">The Design Loop</h3>
+
+<p>The actual interface design of the app started in a notebook and moved from there into Sketch. Within a day or two I had the basic functionality designed and had decided on most of the distinguishing characteristics. As you’ll see later, the initial designs have a passing resemblance to the final app, but a lot of decisions and polish were added in realtime, as I worked in Xcode and with the device on my phone.</p>
+
+<p><img src="/assets/images/posts/developingconjure/FirstSketches.png" alt="The first sketch" />
+<img src="/assets/images/posts/developingconjure/SketchDocument.png" alt="Initial Sketch file" />
+<img src="/assets/images/posts/developingconjure/xcode.png" alt="Early xCode screenshot" /></p>
+
+<p>The original color scheme ended up feeling a little bland, but survived as an unlockable dark theme. Fonts changed, button sizes and table rows were all tweaked based on how the app felt in my hand, a luxury I was afforded being the sole designer and developer. While not 100% designed in xCode, a lot of the app details became apparent in Interface Builder and the Simulator, rather than in Sketch.</p>
+
+<p>Aside from some Interface Builder squabbles where I crossed the wires between programmatic and IB views, tweaking was simple and I even managed to write some AutoLayout constraints (a crowning achievement) that adapted to your device size. Soon I was able to roughly match the Sketch ideas to a working interface.</p>
+
+<p><img src="/assets/images/posts/developingconjure/SketchComparison_1.png" alt="The first sketch" />
+<img src="/assets/images/posts/developingconjure/SketchComparison_2.png" alt="Initial Sketch file" /></p>
+
+<p>The difficult part of this call-and-response design loop is finding when to stop fiddling and lock your designs and when things are still malleable. As a personal project with no deadline and no financial need to ship, I could alter my designs as many times as I wanted. My feet were dragging in the final weeks of development, when I had only a couple small things left to do. My coworkers kept reminding me that building an app doesn’t count until it’s shipped. I eventually gave myself a deadline and only let myself do tweaks that were necessary UX enhancements. Having the solid boundaries of a deadline gave me a final push of energy to finish strong.</p>
+
+<h3 id="features-and-shipping">Features and Shipping</h3>
+
+<p>The problem with a timeline and a deadline is that you often can’t do everything well or sometimes can’t do it at all. Some of the features that got dropped from version 1 were a small calculator, infect counters, turn editing and dice rolling simulation - features that got edged out of the interface and some that I never used in my play testing anyways.</p>
+
+<p><img src="/assets/images/posts/developingconjure/settings-table.png" alt="The Settings table" /></p>
+
+<p>Limiting features in order to ship is a double sided sword in many regards. It’s kept my app functionality clean and focused, but maybe I’ve missed out on some polish or features that would really enhance the experience. Oftentimes I hear the phrase “Minimum Viable Product”, which is a iterative software design philosophy based on getting working products into people’s hands as soon as possible and iterating with additional features and polish. Unfortunately this sometimes leads to poor 1.0 releases that don’t have enough dedicated resources to see substantial 1.1 and 1.2 releases. I already have a list already for future features and sections to refactor after the 1.0 release, so there definitely can be a future for many Conjure updates especially if it becomes popular or profitable.</p>
+
+<p>I’ve had time and bandwidth concerns while thinking about this app, and had to mentally prepare myself for the responsibility of taking people’s money in exchange for a product. Marco Arment recently <a href="http://www.marco.org/2015/09/18/just-doesnt-feel-good">had to face a similar issue</a> (in a much larger way) when his ad-blocking app became a much larger success than he anticipated and became “the guy who blocks ads”. My situation isn’t nearly as intensive, but at a times when I struggle to come home after work and open up Xcode, the idea of doing it perpetually isn’t so appealing.</p>
+
+<h3 id="final-words">Final words</h3>
+
+<p>I’m definitely somebody who thrives on side projects and having little puzzles to solve is a primary way I relax. I’ve often had trouble with hobbies and projects that begin to feel too much like regular work and become harder and harder to work on in spare time. I haven’t discovered a magic cure for that, but I’ve made my commitment to Conjure and produced an app that’s a real world interpretation of my vision. Building an app is something I’m proud of and taking it from doodle to published in just a couple months makes me confident in my understanding of product design best practices and my ability to self-motivate. Again <a href="https://github.com/lkpttn/Conjure">all the code is available on Github</a>, feel free to ask me any questions about the app, Swift resources I used or feature requests.</p>
+</div>
+    </div>
+    <div id="footer" class="container">
+  <div class="footer font-small">
+    <a href="https://twitter.com/friendofpixels" target="_blank">Twitter</a> |
+    <a href="https://www.instagram.com/lukepatton/" target="_blank"
+      >Instagram</a
+    >
+    | <a href="https://github.com/lkpttn" target="_blank">Github</a> <br />
+    It is in vain that you rise up early and go late to rest, eating the bread
+    of anxious toil; for he gives to his beloved sleep.
+  </div>
+</div>
+
+  </body>
+</html>

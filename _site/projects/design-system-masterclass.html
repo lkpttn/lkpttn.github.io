@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" /> <title>Design Systems Masterclass | Friend of Pixels</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<link
+  href="https://fonts.googleapis.com/css?family=Fira+Sans|Inknut+Antiqua"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/assets/reset.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+
+  </head>
+
+  <body>
+    <div id="header" class="header"><div class="container">
+  <div class="navigation">
+    <a href="/"
+      ><img class="logo" src="/assets/FoPxSmall.png"
+    /></a>
+  </div>
+  <ul class="navigation-links">
+    <!-- <li><a href="/about/">About</a></li> -->
+  </ul>
+</div>
+</div>
+    <div id="content">
+      <div class="post-header container">
+        
+        <figure class="post-image">
+          <img src="/assets/images/projects/masterclass/header.jpg" alt="Design Systems Masterclass" />
+        </figure>
+        
+
+        <div class="post-title">
+          <h1>Design Systems Masterclass</h1>
+          <span class="metadata font-small">
+            15 November 2017 
+            
+            | design 
+            | speaking 
+          </span>
+        </div>
+      </div>
+
+      <div class="container"><p>After giving a lightning talk at the NYC Design Systems Coalition Meetup, I was approached about turning it into a full webinar for UXPin. I gladly accepted and was able to expand my initial idea into a full talk, <a href="https://www.uxpin.com/studio/webinars/scaling-product-design-systems-2/">Scaling Your Product With Design Systems</a>. The crux of the talk is about how DoSomething.org manages to maintain a robust product ecosystem with a small (sometimes singular) design team. You can watch the <a href="https://www.uxpin.com/studio/webinars/scaling-product-design-systems-2/">full webinar</a>, view the <a href="https://speakerdeck.com/lkpttn/uxpin-scaling-your-product-with-design-systems">slides</a> or read my short recap below.</p>
+
+<h3 id="recap">Recap</h3>
+
+<p>DoSomething is a non-profit that operates as a tech company. We’re open-source by default and build our own platforms, services and APIs. We employ about 15 full-time software engineers and one product designer. It’s pretty clear how this could become an issue. Luckily, we have a design system.</p>
+
+<p>Forge is our design system. At it’s core, Forge is a set of components and styles we import to all of our products. It exists as a Sketch file for our design team and the code version is distributed with npm to each of our projects. Forge does three important things for us. First, it allows us to maintain consistency across a whole ecosystem of products. We don’t have to worry about the color of links, the spacing of buttons, etc. Secondly, it empowers our engineers to build without being constrained by design bandwidth. Third, it allows us to scale our design and engineering philosophies.</p>
+
+<p>Forge was originally built to house a style library as we started adding more people to the front-end of our applications. It was a simple style set that we could pass around between engineers. It also allowed us to create a style guide in Sketch for quickly mocking up pages and features.</p>
+
+<p>The natural extension of this is allowing engineers to build on their own with the styles and blocks you’ve created. This is one of the powers of the design system. When we were building a new administrative tool, we were able to build the entire interface out of a design system we already had, without a product designer spending more than a week with the team. Engineers and the project manager can build prototypes and tools without having to wait on a designer. We’ve freed up teams to create prototypes and experiments on their own.</p>
+
+<p>This kind of scaling is the crucial component of Forge that allows us to maintain a whole ecosystem. We’re not talking about scale as the number of users or conversion growth. We’re talking about bandwidth and queue growth. The ability for your team to work on more projects, faster, easier. One of the ways to measure the efficiency of your team is to keep track of your queue, to see how long it takes an idea to make it from conception to completion. A design system is essentially a multiplicative effect on a product team’s bandwidth (both design and code) and allows you to turn over your queue of important work much faster.</p>
+
+<p>In addition to scale, we’re talking about consistency. Maintaining consistency of both functional code and visual style is probably the core responsibility of any design system. Design consistency is the visible aspect, making sure that cards, buttons, titles and more are unambiguous and properly implemented across a product. But code quality can benefit too. With a design system, you’re integrating code and components directly into it. You get to have a collaborative code environment to solidify your best practices. You don’t want to repeat your code, a design system is the best way to do that. Your senior engineers can set best practices and have that information and expertise flow down to junior engineers.</p>
+
+<p>We have one person with a job title of “Product Designer”, but lot of people who contribute to a system and that system designs and builds products. Scaling a team around one designer isn’t easy or advisable, but it is possible. You need a couple things in place to start seeing success across multiple teams. The key outcome is an infrastructure that allows for a designer to move in and out of the team’s orbit as their individual bandwidth waxes and wanes.
+If I had to wrap everything up one last time, this is what I would want you to walk away with. If you are a small or mid size company, investing in a design system can do a lot of things for you. Use it to stretch your resources. Use it so you can build once and use everywhere. And as your team and your offerings grow, use it to scale your philosophies. We’re able to ship and maintain exponentially more products and only had to increase hiring for one side of the organization. And if you do have the ability to hire more designers for your team you’re just expanding that multiplicative effect.</p>
+</div>
+    </div>
+    <div id="footer" class="container">
+  <div class="footer font-small">
+    <a href="https://twitter.com/friendofpixels" target="_blank">Twitter</a> |
+    <a href="https://www.instagram.com/lukepatton/" target="_blank"
+      >Instagram</a
+    >
+    | <a href="https://github.com/lkpttn" target="_blank">Github</a> <br />
+    It is in vain that you rise up early and go late to rest, eating the bread
+    of anxious toil; for he gives to his beloved sleep.
+  </div>
+</div>
+
+  </body>
+</html>

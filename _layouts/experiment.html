@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include header.html %}
+  </head>
+
+  <body>
+    <div id="header" class="header">{% include navigation.html %}</div>
+    <div id="content">
+      <div class="post-header container">
+        {% if page.image %}
+        <div class="browser">
+          <img src="/assets/images/{{ page.image }}" alt="{{ page.title }}" />
+        </div>
+        {% endif %} {% if page.embed %}
+        <div class="embed">{{ page.embed }}</div>
+        {% endif %}
+      </div>
+
+      <div class="container">
+        <div class="experiment-title">
+          <h1>{{ page.title }}</h1>
+          <span class="metadata font-small"
+            >{{ page.date | date_to_long_string }} |
+            {{ page.tags | array_to_sentence_string }}</span
+          >
+        </div>
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
