@@ -48,11 +48,11 @@ h4 {
   font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
   font-size: 1em;
-  color: rgb(199, 199, 199);
+  color: rgb(34, 34, 34);
 }
 
 h5 {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -85,22 +85,22 @@ p img {
 
 /* Links */
 a {
-  color: #fff;
+  color: #1D4036;
   text-decoration: none;
 }
 a:visited {
-  color: #fff;
+  color: #1D4036;
 }
 a:hover {
-  color: #fff;
+  color: #1D4036;
   text-decoration: underline;
 }
 
 /* Blockquotes */
 blockquote {
-  color: #fff;
+  color: #000000;
   font-family: 'Inknut Antiqua', serif;
-  border-left: 4px solid #fff;
+  border-left: 4px solid #1D4036;
   padding-left: 15px;
   margin-bottom: 15px;
   font-size: 18px;
@@ -116,8 +116,8 @@ code {
   font-size: 15px;
   font-family: 'Courier New', Courier, monospace;
   border-radius: 3px;
-  background-color: #111;
-  color: #fff;
+  background-color: #eeeeee;
+  color: #000000;
 }
 
 code {
