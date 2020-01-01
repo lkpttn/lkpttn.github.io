@@ -5,7 +5,7 @@ date: 2019-12-31 23:40:28 -0400
 category: posts
 ---
 
-This is a retrospective of my generative art project, [Canvas Cards](https://canvas-cards.glitch.me){:target="_blank"}. Canvas Cards is a gallery of card designs created with the HTML Canvas element and JavaSript. I added a new card every Friday in 2019, and the site includes an editable code block for each card. It was hosted by Glitch, so the entire project is open for viewing and remixing. You can view the [full output as a poster](/assets/images/posts/makingcanvascards/PosterSize.png){:target="_blank"} and the raw files and my tools in the [Github repo](https://github.com/lkpttn/deck){:target="_blank"}.
+This is a retrospective of my generative art project, [Canvas Cards](https://canvas-cards.glitch.me){:target="_blank"}. Canvas Cards is a gallery of card designs created with the HTML Canvas element and JavaSript. I added a new card every Friday in 2019, and the site includes an editable code block for each card. It was hosted by Glitch, so the entire project is open for viewing and remixing. You can view the raw files and my tools in the [Github repo](https://github.com/lkpttn/deck){:target="_blank"}.
 
 I thought it would be worthwhile to reflect back on the process and my experience now that the project has concluded. This post is divided into the following sections:
 
