@@ -64,11 +64,11 @@ h4 {
   line-height: 31px;
   margin-bottom: 7px;
   text-transform: uppercase;
-  color: #9b9b9b;
+  color: #637474;
 }
 
 h5 {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   color: #000;
   text-transform: uppercase;
 }
@@ -80,7 +80,8 @@ h5 {
 small,
 .font-small {
   font-size: 14px;
-  color: #9b9b9b;
+  line-height: 19px;
+  color: #637474;
 }
 
 .metadata {
@@ -97,7 +98,7 @@ li {
 }
 
 hr {
-  color: #9b9b9b;
+  color: #637474;
   margin: 0 0 31px 0;
 }
 
@@ -112,7 +113,7 @@ figure {
 
 figcaption {
   padding-top: 5px;
-  color: #9b9b9b;
+  color: #637474;
 }
 
 /* Links */
