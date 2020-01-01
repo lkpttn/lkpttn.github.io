@@ -5,7 +5,7 @@ date: 2019-12-31 12:40:28 -0400
 category: posts
 ---
 
-This is a retrospective of my generative art project, [Canvas Cards](https://canvas-cards.glitch.me). Canvas Cards is a gallery of card designs created with the HTML Canvas element and JavaSript. I added a new card every Friday in 2019, and the site includes an editable code block for each card. It was hosted by Glitch, so the entire project is open for viewing and remixing. You can also view the raw files and my tools in the [Github repo](https://github.com/lkpttn/deck).
+This is a retrospective of my generative art project, [Canvas Cards](https://canvas-cards.glitch.me){:target="_blank"}. Canvas Cards is a gallery of card designs created with the HTML Canvas element and JavaSript. I added a new card every Friday in 2019, and the site includes an editable code block for each card. It was hosted by Glitch, so the entire project is open for viewing and remixing. You can also view the raw files and my tools in the [Github repo](https://github.com/lkpttn/deck){:target="_blank"}.
 
 I thought it would be worthwhile to reflect back on the process and my experience now that the project has concluded. This post is divided into the following sections:
 
@@ -23,7 +23,7 @@ Fast forward a couple years and I was having brief encounters with generative ar
 
 It was in this cauldron that I decided that I wanted to create some generative art too. An AxiDraw pen plotter was too expensive and too large for me to get started with so I took Matt's course and was introduced to his tool [canvas-sketch](https://github.com/mattdesl/canvas-sketch). I produced a couple simple images following his instructions and using some of the included templates. At some point I read [Inconvergent's essay on generative algorithms](https://inconvergent.net/generative/) and it crystalized for me that I needed a structured way to practice.
 
-![Making%20Canvas%20Cards/2019.01.01-19.41.35.png](Making%20Canvas%20Cards/2019.01.01-19.41.35.png)
+![An image from Creative Coding with Canvas & WebGL](/assets/images/projects/posts/makingcanvascards/Unicode.png)
 
 ## Canvas Cards
 
@@ -54,7 +54,7 @@ One of the most fun parts of the project was setting up the gallery site and my 
 
 I knew I wanted to host my gallery on Glitch pretty early on for a variety of reasons. One, it was dead simple to stand up with my requirements. I needed a single page, a single stylesheet and some javascript. I experimented with a couple layout ideas but settled for the vertical scrolling grid with alternating sections. Midway through the year, Glitch ever released a VS Code extension that let me update the site directly from my IDE. Neat!
 
-![Making%20Canvas%20Cards/HnGy0CUxYH.png](Making%20Canvas%20Cards/HnGy0CUxYH.png)
+![Canvas Cards in the Glitch interface](/assets/images/projects/posts/makingcanvascards/GlitchPreview.png)
 
 The big piece of JavaScript on the page is the one that assembles the table of contents and loads the cards. 52 separate requests is a lot of requests, so we use the Interaction Obsever API to only load a card when we come in contact with it's canvas. Definitely one of the things I'm glad I set up early.
 
@@ -64,13 +64,13 @@ The code blocks were something else I knew were a requirement and a friend recom
 
 The other half of my setup is the builder file, which is the easel I would use to draft up each card. It's a very simple file that just contains a card and it's title in a box that sets up easy development and screenshots. All the preview images were taken from the builder with Firefox's built-in screenshot tools.
 
-![Making%20Canvas%20Cards/6kylHbYf0o.png](Making%20Canvas%20Cards/6kylHbYf0o.png)
+![The card builder and VS Code](/assets/images/projects/posts/makingcanvascards/BuilderPreview.png)
 
 ## Making a card
 
 So let's get into the nitty gritty of how I actually made a card every week. One of the big keys was keeping my eyes open for interesting images and methods. I collected inspirational ideas anywhere I could find them. A lot of them came from Twitter and Tumblr, but I was also able to gather some inspiration in person from graffiti in my neighborhood, a sunset reflecting on some windows or the [Plotter People](https://plotterpeople.github.io/nyc.html) meetup with other artists.
 
-![Making%20Canvas%20Cards/ApplicationFrameHost_dkGXxyR0Q7.png](Making%20Canvas%20Cards/ApplicationFrameHost_dkGXxyR0Q7.png)
+![A screenshot of an inspiration note](/assets/images/projects/posts/makingcanvascards/InspirationDump.png)
 
 I was not great at math while I was in school, topping out somewhere in the Algebra 2 range. So sometimes the genesis for an card was "I want to learn how polar coordinates work." or "How can you draw a shape with an arbitrary number of sides?". A particular example would be when Sher Minn brought a book to the Plotter People NYC meetup, [Curve Stitching: Art of Sewing Beautiful Mathematical Patterns](https://www.amazon.com/Curve-Stitching-Beautiful-Mathematical-Patterns/dp/0906212650). Similarly to Sol Lewitt's wall drawings, these pages were filled with instructions for contstructing patterns.
 
@@ -82,11 +82,7 @@ Originally for sewing, but that's practically already code ready for us to use. 
 
 Once the inspiration was stewing around in my brain, I would use an old design trick and not actually look at the image or photo again. I relied on my brain to remember what the interesting pieces of inspiration were and let the imperfect recollection guide me. Those raised edges of information were where I could jump off from and begin experimenting. I deliberately let the process be very loose, just throwing messy code around to see how different tweaks of the core idea would play out. Most cards started out in black and white, just to see if there was enough juice in the idea to be interesting.
 
-![Making%20Canvas%20Cards/Screenshot_2019-11-14_Card_Builder2.png](Making%20Canvas%20Cards/Screenshot_2019-11-14_Card_Builder2.png)
-
-![Making%20Canvas%20Cards/Screenshot_2019-11-29_Card_Builder.png](Making%20Canvas%20Cards/Screenshot_2019-11-29_Card_Builder.png)
-
-![Making%20Canvas%20Cards/Screenshot_2019-09-20_Card_Builder1.png](Making%20Canvas%20Cards/Screenshot_2019-09-20_Card_Builder1.png)
+![An image from Creative Coding with Canvas & WebGL](/assets/images/projects/posts/makingcanvascards/BlackThree.png)
 
 Sometimes a card drastically changed over the course a week and sometimes it emegerd fully formed in an hour. As the project matured I was also able to take pieces from previous cards and apply new methods and techniques to them for fresh outcomes. I kept a draft folder of half-baked ideas that I would raid for spare parts, sometimes months after originally jotting them down.
 
@@ -102,27 +98,27 @@ I love all my children equally, but I do have some favorites that stick out to m
 
 This was the first card that used some unorthodox techniques for drawing, even if it's not truly generative. I saw a similar image on a comic book panel that a friend had as part of a screensaver. We use just a little math to angle the ellipses and a sneaky half elipse to give the ball a 3D effect.
 
-![Making%20Canvas%20Cards/006-Nowhere.png](Making%20Canvas%20Cards/006-Nowhere.png)
+![An image from Canvas Cards](/assets/images/projects/posts/makingcanvascards/006-Nowhere.png)
 
 #### 016 - Boxer
 There's a lot about this card that shouldn't work, but I think it does. A weird mishmashy quilt of colors and gradients, I think this was one of the first successful truly generative cards and it's still one of my favorites to revisit.
 
-![Making%20Canvas%20Cards/016-Boxer.png](Making%20Canvas%20Cards/016-Boxer.png)
+![An image from Canvas Cards](/assets/images/projects/posts/makingcanvascards/016-Boxer.png)
 
 #### 027 - Corvus
 I picked up an astronomy book in the gift shop of the Charlotte Mint Museum that detailed different constellations and fell in love with their style immediately. this is my little telescope and star field.
 
-![Making%20Canvas%20Cards/027-Corvus.png](Making%20Canvas%20Cards/027-Corvus.png)
+![An image from Canvas Cards](/assets/images/projects/posts/makingcanvascards/027-Corvus.png)
 
 #### 035 - Chronos
 Chronos is the first card to use a data source to render it's image. We use the data to set the positioning of the inner four rings of the card. From the inside out the position and rotation is set by the current second, minute, hour and day.
 
-![Making%20Canvas%20Cards/035-Chronos.png](Making%20Canvas%20Cards/035-Chronos.png)
+![An image from Canvas Cards](/assets/images/projects/posts/makingcanvascards/035-Chronos.png)
 
 #### 049 - Datamosh
 Years before I learned anything about generative art I had seen examples of pixelsorting, using an algorithm to compare the numerical values of two pixels and move them accordingly. It was literally a dream come true to be able to implement it in just JavaScript and pixelsort in real time.
 
-![Making%20Canvas%20Cards/049-DatamoshDark.png](Making%20Canvas%20Cards/049-DatamoshDark.png)
+![An image from Canvas Cards](/assets/images/projects/posts/makingcanvascards/049-Datamosh.png)
 
 ### Personal Projects and Money
 
