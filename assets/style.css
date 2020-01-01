@@ -127,6 +127,7 @@ code {
 pre {
   padding: 20px;
   overflow-x: auto;
+  margin-bottom: 1.3em;
 }
 pre > code {
   border: 0;
@@ -181,6 +182,7 @@ pre > code {
 .list-columns {
   column-count: 1;
   column-gap: 1em;
+  list-style: none;
 }
 
 @media (min-width: 500px) {

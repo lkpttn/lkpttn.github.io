@@ -98,7 +98,7 @@ Once the card's visual design was set, I would go through and clean up the code.
 
 I love all my children equally, but I do have some favorites that stick out to me for particular reasons. In chronological order:
 
-#### 006 - Nowhere/Tomorrow**
+#### 006 - Nowhere/Tomorrow
 
 This was the first card that used some unorthodox techniques for drawing, even if it's not truly generative. I saw a similar image on a comic book panel that a friend had as part of a screensaver. We use just a little math to angle the ellipses and a sneaky half elipse to give the ball a 3D effect.
 
@@ -134,7 +134,7 @@ To me the introduction of money would be would instantly change the dynamic of c
 
 I've been fielding a decent number of questions from people interested in generative art and canvas experiments, so I figured I would collect some of the resources that I used during this project (some of them might be linked earlier). This is assuming at least a passing familiaraty with HTML and web tech.
 
-#### Beginning:
+#### Beginner:
 - [MDN's Canvas API Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 - [The Coding Train](https://thecodingtrain.com/)
 - [Wes Bos' Beginner JavaScript course](https://beginnerjavascript.com/)

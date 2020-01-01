@@ -4,7 +4,7 @@ let context = canvas.getContext('2d');
 let width = (canvas.width = window.innerWidth);
 let height = (canvas.height = window.innerHeight);
 
-let strokeColor = 'rgba(0,0,0,1)';
+let strokeColor = 'rgba(0,0,0,0.4)';
 let bgColor = 'rgba(255, 255, 255, 1.0';
 
 // Create the bg before changing the origin
