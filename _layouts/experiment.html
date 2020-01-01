@@ -20,10 +20,10 @@
       <div class="container">
         <div class="experiment-title">
           <h1>{{ page.title }}</h1>
-          <span class="metadata font-small"
-            >{{ page.date | date_to_long_string }} | {% for tag in page.tags %}
-            | {{ tag }} {% endfor %}</span
-          >
+          <h5 class="font-small">
+            {{ page.date | date_to_long_string }} {% for tag in page.tags %} |
+            {{ tag }} {% endfor %}
+          </h5>
         </div>
         {{ content }}
       </div>
