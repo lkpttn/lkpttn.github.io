@@ -4,79 +4,48 @@ let context = canvas.getContext('2d');
 let width = (canvas.width = window.innerWidth);
 let height = (canvas.height = window.innerHeight);
 
-let strokeColor = 'rgba(0,0,0,0.1)';
+let strokeColor = 'rgba(123,150,128, 0.2)';
 let bgColor = 'rgba(255, 255, 255, 1.0)';
 
-// Create the bg before changing the origin
 context.fillStyle = bgColor;
 context.fillRect(0, 0, width, height);
 
 context.translate(width / 2, height / 2);
 
+context.strokeStyle = strokeColor;
+
+// Loop circle drawing
+for (let i = 0; i < 4; i++) {
+  context.beginPath();
+
+  let x = rangeFloor(-1 * (width / 2), width / 2);
+  let y = rangeFloor(-1 * (height / 2), height / 2);
+  let radius = 5 * rangeFloor(30, 80);
+  let startAngle = 0;
+  let endAngle = degreeToRadians(10 * rangeFloor(5, 30));
+  let anticlockwise = i % 2 !== 0;
+
+  context.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+  context.stroke();
+}
+
+// Lines
+for (let i = 0; i < 6; i++) {
+  let x = rangeFloor(-1 * (width / 2), width / 2);
+  let y = rangeFloor(-1 * (height / 2), height / 2);
+  let x2 = x + rangeFloor(-1000, 1000);
+  let y2 = y + rangeFloor(-1000, 1000);
+  context.beginPath();
+  context.moveTo(x, y);
+  context.lineTo(x2, y2);
+  context.stroke();
+}
+
 // Helper functions
-function rand(min, max) {
+function rangeFloor(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function radians(degrees) {
+function degreeToRadians(degrees) {
   return (degrees * Math.PI) / 180;
-}
-
-// Circle
-context.beginPath();
-context.strokeStyle = strokeColor;
-// context.arc(0, 0, 300, 0, 10, 0);
-context.stroke();
-
-// Loop circle drawing
-// Run this two times
-for (let i = 0; i < 2; i++) {
-  // Run  this two times for every i loop
-  for (let j = 0; j < 2; j++) {
-    context.beginPath();
-
-    let x = rand(-1 * (width / 2), width / 2);
-    let y = rand(-1 * (height / 2), height / 2);
-    let radius = 5 * rand(30, 80);
-    let startAngle = 0;
-    let endAngle = radians(10 * rand(5, 30));
-    let anticlockwise = i % 2 !== 0;
-
-    context.arc(x, y, radius, startAngle, endAngle, anticlockwise);
-    context.strokeStyle = strokeColor;
-    context.stroke();
-  }
-}
-
-// Drawing lines
-
-// Vertical
-// We want them to always start off the canvas and move towards the center
-for (let i = 0; i < 2; i++) {
-  let x = rand(-1 * (width / 2), width / 2);
-  let y = i % 2 !== 0 ? -1 * (height / 2) : height / 2;
-  context.beginPath();
-  // Start at the top or bottom of the canvas
-  context.moveTo(x, y);
-  // Draw the line component towards the middle
-  context.lineTo(0 + rand(-100, 100), 0 + rand(-100, 100));
-
-  context.strokeStyle = strokeColor;
-  context.stroke();
-}
-
-// Diagonal
-for (let i = 0; i < 2; i++) {
-  let x = i % 2 !== 0 ? -1 * (width / 2) : width / 2;
-  let y = rand(-1 * (height / 4 + 200), height / 4 + 200);
-  context.beginPath();
-  // Start off the edge of the canvas and move to the opposite edge
-  context.moveTo(x, y);
-  // Draw the line component off the right side of the canvas
-  context.lineTo(y, x);
-
-  console.log('Drawing a line from ' + x + ', ' + y + ' to ' + y + ', ' + x);
-
-  context.strokeStyle = strokeColor;
-  context.stroke();
 }

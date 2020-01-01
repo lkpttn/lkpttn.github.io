@@ -8,11 +8,11 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: rgb(34, 34, 34);
+  font-size: 1.125em;
 }
 
 /* Text */
 p {
-  font-size: 1.125em;
   margin-bottom: 1.3em;
 }
 
@@ -24,7 +24,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 1.0em 0 0.5em;
   font-family: 'Inknut Antiqua', serif;
   font-weight: inherit;
   line-height: 1.4;
@@ -47,7 +47,7 @@ h3 {
 h4 {
   font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  text-transform: uppercase;
   color: rgb(34, 34, 34);
 }
 
@@ -67,6 +67,7 @@ small,
 
 /* Basics */
 ul {
+  margin-bottom: 1.3em;
   list-style: disc inside;
 }
 
@@ -79,8 +80,13 @@ img {
   vertical-align: middle;
 }
 
-p img {
-  padding-bottom: 15px;
+figure {
+  margin-bottom: 1.3em;
+}
+
+figcaption {
+  padding-top: 5px;
+  color: #9b9b9b;
 }
 
 /* Links */
@@ -172,6 +178,14 @@ pre > code {
 
 .full-container {
   grid-column: content-start / content-end;
+}
+
+.aside {
+  grid-column: content-start / span 6;
+}
+
+.right {
+  grid-column: 8 / content-end;
 }
 
 .list {
@@ -304,5 +318,4 @@ canvas {
 .footer {
   margin-top: 5.20833rem;
   margin-bottom: 5em;
-  grid-column: content-start / content-end;
 }

@@ -15,6 +15,4 @@ I've often found that the best way to learn new skills is to have some practical
 
 The gallery is hosted on [Glitch](https://glitch.com), and all the source code is available [there](https://glitch.com/edit/#!/canvas-cards) and on [Github](https://github.com/lkpttn/deck).
 
-<div class="full-container gallery">
-<img src="/assets/images/posts/makingcanvascards/PosterSize.png" alt="The completed Canvas Cards output"/>
-</div>
+{% include image.html class="full-container" url="/assets/images/posts/makingcanvascards/PosterSize.png" caption="false" description="The completed Canvas Cards output" %}

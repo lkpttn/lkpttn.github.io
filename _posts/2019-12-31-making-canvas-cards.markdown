@@ -23,13 +23,15 @@ Fast forward a couple years and I was having brief encounters with generative ar
 
 It was in this cauldron that I decided that I wanted to create some generative art too. An AxiDraw pen plotter was too expensive and too large for me to get started with so I took Matt's course and was introduced to his tool [canvas-sketch](https://github.com/mattdesl/canvas-sketch){:target="_blank"}. I produced a couple simple images following his instructions and using some of the included templates. At some point I read [Inconvergent's essay on generative algorithms](https://inconvergent.net/generative/){:target="_blank"} and it crystalized for me that I needed a structured way to practice.
 
-![An image from Creative Coding with Canvas & WebGL](/assets/images/posts/makingcanvascards/Unicode.png)
+{% include image.html url="/assets/images/posts/makingcanvascards/Unicode.png" caption="true" description="An image from Creative Coding with Canvas & WebGL" %}
+
 
 ## Canvas Cards
 
 When I was in school, I was not very good at traditional art (and I'm still not). But I internalized the lessons they taught me about practice and improvement. If I really wanted to make strides in generative art I needed a challenge that would (comfortably) stretch me and make me seek out new ideas and methods. It was a [CSS tarot card on CodePen](https://codepen.io/ninabit/pen/MLpgxW){:target="_blank"} that first introduced me to the card idea, and I combined it with the default canvas-sketch template.
 
-![https://raw.githubusercontent.com/mattdesl/canvas-sketch/master/docs/assets/images/chrome-example.png](https://raw.githubusercontent.com/mattdesl/canvas-sketch/master/docs/assets/images/chrome-example.png)
+{% include image.html url="/assets/images/posts/makingcanvascards/canvas-sketch.png" caption="true" description="The default canvas-sketch template" %}
+
 
 As I dug in a little bit the details seemed to line up perfectly. It would give me a decent sized canvas to work with and could pretty easily form a gallery.  52 weeks in a year, 52 cards in a deck and almost limitless visual potential.
 
@@ -54,9 +56,7 @@ One of the most fun parts of the project was setting up the gallery site and my 
 
 I knew I wanted to host my gallery on Glitch pretty early on for a variety of reasons. One, it was dead simple to stand up with my requirements. I needed a single page, a single stylesheet and some javascript. I experimented with a couple layout ideas but settled for the vertical scrolling grid with alternating sections. Midway through the year, Glitch ever released a VS Code extension that let me update the site directly from my IDE. Neat!
 
-<div class="full-container gallery">
-<img src="/assets/images/posts/makingcanvascards/GlitchPreview.png" alt="Canvas Cards in the Glitch interface"/>
-</div>
+{% include image.html class="full-container" url="/assets/images/posts/makingcanvascards/GlitchPreview.png" caption="true" description="Canvas Cards in the Glitch interface" %}
 
 The big piece of JavaScript on the page is the one that assembles the table of contents and loads the cards. 52 separate requests is a lot of requests, so we use the Interaction Obsever API to only load a card when we come in contact with it's canvas. Definitely one of the things I'm glad I set up early.
 
@@ -66,15 +66,14 @@ The code blocks were something else I knew were a requirement and a friend recom
 
 The other half of my setup is the builder file, which is the easel I would use to draft up each card. It's a very simple file that just contains a card and it's title in a box that sets up easy development and screenshots. All the preview images were taken from the builder with Firefox's built-in screenshot tools.
 
-<div class="full-container gallery">
-<img src="/assets/images/posts/makingcanvascards/BuilderPreview.png" alt="The card builder and VS Code"/>
-</div>
+{% include image.html class="full-container" url="/assets/images/posts/makingcanvascards/BuilderPreview.png" caption="true" description="Canvas Cards in the Glitch interface" %}
 
 ## Making a card
 
 So let's get into the nitty gritty of how I actually made a card every week. One of the big keys was keeping my eyes open for interesting images and methods. I collected inspirational ideas anywhere I could find them. A lot of them came from Twitter and Tumblr, but I was also able to gather some inspiration in person from graffiti in my neighborhood, a sunset reflecting on some windows or the [Plotter People](https://plotterpeople.github.io/nyc.html){:target="_blank"} meetup with other artists.
 
-![A screenshot of an inspiration note](/assets/images/posts/makingcanvascards/InspirationDump.png)
+
+{% include image.html url="/assets/images/posts/makingcanvascards/InspirationDump.png" caption="true" description="A screenshot of an inspiration note" %}
 
 I was not great at math while I was in school, topping out somewhere in the Algebra 2 range. So sometimes the genesis for an card was "I want to learn how polar coordinates work." or "How can you draw a shape with an arbitrary number of sides?". A particular example would be when Sher Minn brought a book to the Plotter People NYC meetup, [Curve Stitching: Art of Sewing Beautiful Mathematical Patterns](https://www.amazon.com/Curve-Stitching-Beautiful-Mathematical-Patterns/dp/0906212650){:target="_blank"}. Similarly to Sol Lewitt's wall drawings, these pages were filled with instructions for contstructing patterns.
 
@@ -86,9 +85,7 @@ Originally for sewing, but that's practically already code ready for us to use. 
 
 Once the inspiration was stewing around in my brain, I would use an old design trick and not actually look at the image or photo again. I relied on my brain to remember what the interesting pieces of inspiration were and let the imperfect recollection guide me. Those raised edges of information were where I could jump off from and begin experimenting. I deliberately let the process be very loose, just throwing messy code around to see how different tweaks of the core idea would play out. Most cards started out in black and white, just to see if there was enough juice in the idea to be interesting.
 
-<div class="full-container gallery">
-<img src="/assets/images/posts/makingcanvascards/BlackThree.png" alt="An image from Creative Coding with Canvas & WebGL"/>
-</div>
+{% include image.html class="full-container" url="/assets/images/posts/makingcanvascards/BlackThree.png" caption="true" description="Three cards in progress" %}
 
 Sometimes a card drastically changed over the course a week and sometimes it emegerd fully formed in an hour. As the project matured I was also able to take pieces from previous cards and apply new methods and techniques to them for fresh outcomes. I kept a draft folder of half-baked ideas that I would raid for spare parts, sometimes months after originally jotting them down.
 
