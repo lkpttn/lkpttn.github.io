@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Making Canvas Cards'
-date: 2019-12-31 22:40:28 -0400
+date: 2019-12-31 12:40:28 -0400
 category: posts
 ---
 
@@ -98,32 +98,28 @@ Once the card's visual design was set, I would go through and clean up the code.
 
 I love all my children equally, but I do have some favorites that stick out to me for particular reasons. In chronological order:
 
-**006 - Nowhere/Tomorrow**
+#### 006 - Nowhere/Tomorrow**
 
 This was the first card that used some unorthodox techniques for drawing, even if it's not truly generative. I saw a similar image on a comic book panel that a friend had as part of a screensaver. We use just a little math to angle the ellipses and a sneaky half elipse to give the ball a 3D effect.
 
 ![Making%20Canvas%20Cards/006-Nowhere.png](Making%20Canvas%20Cards/006-Nowhere.png)
 
-**016 - Boxer**
-
+#### 016 - Boxer
 There's a lot about this card that shouldn't work, but I think it does. A weird mishmashy quilt of colors and gradients, I think this was one of the first successful truly generative cards and it's still one of my favorites to revisit.
 
 ![Making%20Canvas%20Cards/016-Boxer.png](Making%20Canvas%20Cards/016-Boxer.png)
 
-**027 - Corvus**
-
+#### 027 - Corvus
 I picked up an astronomy book in the gift shop of the Charlotte Mint Museum that detailed different constellations and fell in love with their style immediately. this is my little telescope and star field.
 
 ![Making%20Canvas%20Cards/027-Corvus.png](Making%20Canvas%20Cards/027-Corvus.png)
 
-**035 - Chronos**
-
+#### 035 - Chronos
 Chronos is the first card to use a data source to render it's image. We use the data to set the positioning of the inner four rings of the card. From the inside out the position and rotation is set by the current second, minute, hour and day.
 
 ![Making%20Canvas%20Cards/035-Chronos.png](Making%20Canvas%20Cards/035-Chronos.png)
 
-**049 - Datamosh**
-
+#### 049 - Datamosh
 Years before I learned anything about generative art I had seen examples of pixelsorting, using an algorithm to compare the numerical values of two pixels and move them accordingly. It was literally a dream come true to be able to implement it in just JavaScript and pixelsort in real time.
 
 ![Making%20Canvas%20Cards/049-DatamoshDark.png](Making%20Canvas%20Cards/049-DatamoshDark.png)
@@ -149,7 +145,7 @@ I've been fielding a decent number of questions from people interested in genera
 - [On Generative Algorithms](https://inconvergent.net/generative/)
 - [Complexification.net](http://www.complexification.net/gallery/)
 
-**Advanced/Theory:**
+#### Advanced/Theory:
 
 - [Computational Drawing: From Foundational Exercises to Theories of Representation](http://lostritto.com/book)
 - [The Book of Shaders](https://thebookofshaders.com/)
