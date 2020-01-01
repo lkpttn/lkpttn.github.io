@@ -54,7 +54,9 @@ One of the most fun parts of the project was setting up the gallery site and my 
 
 I knew I wanted to host my gallery on Glitch pretty early on for a variety of reasons. One, it was dead simple to stand up with my requirements. I needed a single page, a single stylesheet and some javascript. I experimented with a couple layout ideas but settled for the vertical scrolling grid with alternating sections. Midway through the year, Glitch ever released a VS Code extension that let me update the site directly from my IDE. Neat!
 
-![Canvas Cards in the Glitch interface](/assets/images/posts/makingcanvascards/GlitchPreview.png)
+<div class="full-container gallery">
+<img src="/assets/images/posts/makingcanvascards/GlitchPreview.png" alt="Canvas Cards in the Glitch interface"/>
+</div>
 
 The big piece of JavaScript on the page is the one that assembles the table of contents and loads the cards. 52 separate requests is a lot of requests, so we use the Interaction Obsever API to only load a card when we come in contact with it's canvas. Definitely one of the things I'm glad I set up early.
 
@@ -64,7 +66,9 @@ The code blocks were something else I knew were a requirement and a friend recom
 
 The other half of my setup is the builder file, which is the easel I would use to draft up each card. It's a very simple file that just contains a card and it's title in a box that sets up easy development and screenshots. All the preview images were taken from the builder with Firefox's built-in screenshot tools.
 
-![The card builder and VS Code](/assets/images/posts/makingcanvascards/BuilderPreview.png)
+<div class="full-container gallery">
+<img src="/assets/images/posts/makingcanvascards/BuilderPreview.png" alt="The card builder and VS Code"/>
+</div>
 
 ## Making a card
 
@@ -82,7 +86,9 @@ Originally for sewing, but that's practically already code ready for us to use. 
 
 Once the inspiration was stewing around in my brain, I would use an old design trick and not actually look at the image or photo again. I relied on my brain to remember what the interesting pieces of inspiration were and let the imperfect recollection guide me. Those raised edges of information were where I could jump off from and begin experimenting. I deliberately let the process be very loose, just throwing messy code around to see how different tweaks of the core idea would play out. Most cards started out in black and white, just to see if there was enough juice in the idea to be interesting.
 
-![An image from Creative Coding with Canvas & WebGL](/assets/images/posts/makingcanvascards/BlackThree.png)
+<div class="full-container gallery">
+<img src="/assets/images/posts/makingcanvascards/BlackThree.png" alt="An image from Creative Coding with Canvas & WebGL"/>
+</div>
 
 Sometimes a card drastically changed over the course a week and sometimes it emegerd fully formed in an hour. As the project matured I was also able to take pieces from previous cards and apply new methods and techniques to them for fresh outcomes. I kept a draft folder of half-baked ideas that I would raid for spare parts, sometimes months after originally jotting them down.
 
@@ -118,7 +124,7 @@ Chronos is the first card to use a data source to render it's image. We use the 
 #### 049 - Datamosh
 Years before I learned anything about generative art I had seen examples of pixelsorting, using an algorithm to compare the numerical values of two pixels and move them accordingly. It was literally a dream come true to be able to implement it in just JavaScript and pixelsort in real time.
 
-![An image from Canvas Cards](/assets/images/posts/makingcanvascards/049-Datamosh.png)
+![An image from Canvas Cards](/assets/images/posts/makingcanvascards/049-DatamoshDark.png)
 
 ### Personal Projects and Money
 
