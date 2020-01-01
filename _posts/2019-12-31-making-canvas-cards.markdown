@@ -5,8 +5,6 @@ date: 2019-12-31 22:40:28 -0400
 category: posts
 ---
 
-# Making Canvas Cards
-
 This is a retrospective of my generative art project, [Canvas Cards](https://canvas-cards.glitch.me). Canvas Cards is a gallery of card designs created with the HTML Canvas element and JavaSript. I added a new card every Friday in 2019, and the site includes an editable code block for each card. It was hosted by Glitch, so the entire project is open for viewing and remixing. You can also view the raw files and my tools in the [Github repo](https://github.com/lkpttn/deck).
 
 I thought it would be worthwhile to reflect back on the process and my experience now that the project has concluded. This post is divided into the following sections:
@@ -140,15 +138,13 @@ To me the introduction of money would be would instantly change the dynamic of c
 
 I've been fielding a decent number of questions from people interested in generative art and canvas experiments, so I figured I would collect some of the resources that I used during this project (some of them might be linked earlier). This is assuming at least a passing familiaraty with HTML and web tech.
 
-**Beginning:**
-
+#### Beginning:
 - [MDN's Canvas API Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 - [The Coding Train](https://thecodingtrain.com/)
 - [Wes Bos' Beginner JavaScript course](https://beginnerjavascript.com/)
 - [Why Love Generative Art](https://www.artnome.com/news/2018/8/8/why-love-generative-art)
 
-**Intermediate and Generative Art Specific:**
-
+#### Intermediate and Generative Art Specific:
 - [Creative Coding with Canvas & WebGL](https://frontendmasters.com/courses/canvas-webgl/)
 - [On Generative Algorithms](https://inconvergent.net/generative/)
 - [Complexification.net](http://www.complexification.net/gallery/)
