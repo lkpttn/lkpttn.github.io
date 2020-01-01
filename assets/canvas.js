@@ -5,7 +5,7 @@ let width = (canvas.width = window.innerWidth);
 let height = (canvas.height = window.innerHeight);
 
 let strokeColor = 'rgba(0,0,0,0.4)';
-let bgColor = 'rgba(255, 255, 255, 1.0';
+let bgColor = 'rgba(255, 255, 255, 1.0)';
 
 // Create the bg before changing the origin
 context.fillStyle = bgColor;
@@ -24,7 +24,7 @@ function radians(degrees) {
 
 // Circle
 context.beginPath();
-context.strokeStyle = strokeColor + 0.8;
+context.strokeStyle = strokeColor;
 // context.arc(0, 0, 300, 0, 10, 0);
 context.stroke();
 
@@ -43,7 +43,7 @@ for (let i = 0; i < 2; i++) {
     let anticlockwise = i % 2 !== 0;
 
     context.arc(x, y, radius, startAngle, endAngle, anticlockwise);
-    context.strokeStyle = strokeColor + (0.6 - Math.random());
+    context.strokeStyle = strokeColor;
     context.stroke();
   }
 }
@@ -61,7 +61,7 @@ for (let i = 0; i < 2; i++) {
   // Draw the line component towards the middle
   context.lineTo(0 + rand(-100, 100), 0 + rand(-100, 100));
 
-  context.strokeStyle = strokeColor + (0.6 - Math.random());
+  context.strokeStyle = strokeColor;
   context.stroke();
 }
 
@@ -77,6 +77,6 @@ for (let i = 0; i < 2; i++) {
 
   console.log('Drawing a line from ' + x + ', ' + y + ' to ' + y + ', ' + x);
 
-  context.strokeStyle = strokeColor + (0.6 - Math.random());
+  context.strokeStyle = strokeColor;
   context.stroke();
 }
