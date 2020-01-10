@@ -3,13 +3,14 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #fcf8f2;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.45rem;
   color: rgb(34, 34, 34);
+  color: #707066;
   font-size: 1.125em;
 }
 
@@ -38,7 +39,7 @@ h4 {
   margin: 1em 0 0.5em;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
+  color: #21211f;
 }
 
 h1 {
@@ -64,7 +65,7 @@ h4 {
   line-height: 31px;
   margin-bottom: 7px;
   text-transform: uppercase;
-  color: #637474;
+  color: #707066;
 }
 
 h5 {
@@ -81,7 +82,7 @@ small,
 .font-small {
   font-size: 14px;
   line-height: 19px;
-  color: #637474;
+  color: #707066;
 }
 
 .metadata {
@@ -98,7 +99,7 @@ li {
 }
 
 hr {
-  color: #637474;
+  color: #707066;
   margin: 0 0 31px 0;
 }
 
@@ -113,26 +114,26 @@ figure {
 
 figcaption {
   padding-top: 5px;
-  color: #637474;
+  color: #707066;
 }
 
 /* Links */
 a {
-  color: #4c823a;
-  text-decoration: none;
+  color: #357331;
+  text-decoration: underline;
 }
 a:visited {
-  color: #4c823a;
+  color: #357331;
 }
 a:hover {
-  color: #1d4036;
+  color: #1d4023;
   text-decoration: underline;
 }
 
 /* Blockquotes */
 blockquote {
   color: #000000;
-  border-left: 4px solid #1d4036;
+  border-left: 4px solid #1d4023;
   padding-left: 15px;
   margin-bottom: 15px;
   letter-spacing: -1px;
