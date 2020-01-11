@@ -11,7 +11,7 @@ var radius = -100;
 var alpha = 1.0;
 var numCircle = 100;
 
-context.fillStyle = '#fffbf3';
+context.fillStyle = '#fff';
 context.fillRect(0, 0, width, height);
 
 for (let i = 0; i < numCircle; i++) {
