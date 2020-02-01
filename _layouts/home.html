@@ -9,8 +9,7 @@
       <canvas class="header-canvas">
         <p>Luv circles and lines</p>
       </canvas>
-      {%
-      include navigation.html %}
+      {% include navigation.html %}
     </div>
 
     <div class="container">
@@ -18,37 +17,21 @@
         <h1 class="headline">{{ page.headline }}</h1>
         {{ content }}
       </div>
-
-      <!-- <div class="list">
-        <h5 class="font-small metadata">Recently updated</h5>
+      {% for category in site.categories %}
+      <div class="column {{category[0]}}">
+        <h5 class="font-small metadata">{{ category[0] }}</h5>
         <ul class="list-columns">
-          {% for post in site.posts limit:20 %}
-            <li class="{{ post.category }}">
-              <a href="{{ post.url }}">{{ post.title }}</a>
-              <span class="font-small metadata">
-                -
-                {{ post.date | date: "%Y" }}</span>
-            </li>
+          {% for post in category[1] %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="font-small metadata">
+              - {{ post.date | date: "%Y" }}</span
+            >
+          </li>
           {% endfor %}
         </ul>
-      </div> -->
-
-      {% for category in site.categories %}
-        <div class="column {{category[0]}}">
-          <h5 class="font-small metadata">{{ category[0] }}</h5>
-          <ul class="list-columns">
-            {% for post in category[1] %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <span class="font-small metadata">
-                  -
-                  {{ post.date | date: "%Y" }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+      </div>
       {% endfor %}
-
     </div>
 
     {% include footer.html %}

@@ -1,16 +1,56 @@
+@font-face {
+  font-family: 'Konsole Regular';
+  src: local('Konsole0.4'),
+    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Regular.woff2')
+      format('woff2'),
+    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Regular.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Konsole Bold';
+  src: url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Bold.woff2')
+      format('woff2'),
+    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Bold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Konsole Compact Bold';
+  src: url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-CompactBold.woff2')
+      format('woff2'),
+    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-CompactBold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Konsole Expanded Bold';
+  src: url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-ExpandedBold.woff2')
+      format('woff2'),
+    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-ExpandedBold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   font-size: 1em;
 }
 
 body {
   background: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Konsole Regular', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.45rem;
-  color: #707066;
-  font-size: 1.125em;
+  color: #4d4d4d;
+  font-size: 20px;
 }
 
 p,
@@ -24,7 +64,7 @@ pre,
 
 /* Text */
 p {
-  line-height: 31px;
+  line-height: 34px;
 }
 
 strong {
@@ -35,6 +75,7 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: 'Konsole Bold', 'Helvetica Neue', sans-serif;
   margin: 1em 0 0.5em;
   font-weight: 700;
   font-style: normal;
@@ -42,6 +83,7 @@ h4 {
 }
 
 h1 {
+  font-family: 'Konsole Expanded Bold', 'Helvetica Neue', sans-serif;
   font-size: 37px;
   line-height: 58px;
   margin-bottom: 31px;
@@ -60,6 +102,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'Konsole Compact Bold', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   line-height: 31px;
   margin-bottom: 7px;
@@ -80,7 +123,7 @@ h5 {
 small,
 .font-small {
   font-size: 14px;
-  line-height: 19px;
+  line-height: 21px;
   color: #707066;
 }
 
@@ -183,7 +226,7 @@ pre > code {
       minmax(1.25rem, 5.20833rem)
     )
     [content-end] minmax(1.25rem, 1fr) [edge-end];
-  grid-column-gap: 0.75%;
+  grid-column-gap: 1%;
 }
 
 .container > * {
@@ -207,12 +250,18 @@ pre > code {
 }
 
 .column {
-  grid-row-start: 2;
-  grid-column: span 4;
+  grid-column: content-start / content-end;
 }
 
-.projects {
-  grid-column: 2 / span 4;
+@media (min-width: 500px) {
+  .column {
+    grid-row-start: 2;
+    grid-column: span 4;
+  }
+
+  .projects {
+    grid-column: 2 / span 4;
+  }
 }
 
 .list {
@@ -240,7 +289,7 @@ pre > code {
 }
 
 .list-columns li {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .navigation {
