@@ -1,56 +1,14 @@
-@font-face {
-  font-family: 'Konsole Regular';
-  src: local('Konsole0.4'),
-    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Regular.woff2')
-      format('woff2'),
-    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Regular.woff')
-      format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Konsole Bold';
-  src: url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Bold.woff2')
-      format('woff2'),
-    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-Bold.woff')
-      format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Konsole Compact Bold';
-  src: url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-CompactBold.woff2')
-      format('woff2'),
-    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-CompactBold.woff')
-      format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Konsole Expanded Bold';
-  src: url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-ExpandedBold.woff2')
-      format('woff2'),
-    url('https://lkpttn-font-server.s3.amazonaws.com/konsole/Konsole0.4-ExpandedBold.woff')
-      format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
 html {
   font-size: 1em;
 }
 
 body {
-  background: #fff;
-  font-family: 'Konsole Regular', 'Helvetica Neue', sans-serif;
+  background: #fbf8f8;
+  font-family: 'Source Sans Pro', serif;
   font-weight: 400;
-  font-style: normal;
-  line-height: 1.45rem;
-  color: #4d4d4d;
-  font-size: 20px;
+  color: #0b1a17;
+  font-size: 21px;
+  line-height: 24px;
 }
 
 p,
@@ -64,7 +22,7 @@ pre,
 
 /* Text */
 p {
-  line-height: 34px;
+  line-height: 30px;
 }
 
 strong {
@@ -75,23 +33,22 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Konsole Bold', 'Helvetica Neue', sans-serif;
+  font-family: 'Konsole Expanded Semibold', 'Helvetica Neue', sans-serif;
   margin: 1em 0 0.5em;
   font-weight: 700;
   font-style: normal;
-  color: #21211f;
+  color: #25453d;
 }
 
 h1 {
-  font-family: 'Konsole Expanded Bold', 'Helvetica Neue', sans-serif;
-  font-size: 37px;
-  line-height: 58px;
+  font-size: 42px;
+  line-height: 50px;
   margin-bottom: 31px;
 }
 
 h2 {
   font-size: 29px;
-  line-height: 47px;
+  line-height: 43px;
   margin-bottom: 19px;
 }
 
@@ -102,38 +59,39 @@ h3 {
 }
 
 h4 {
-  font-family: 'Konsole Compact Bold', 'Helvetica Neue', sans-serif;
+  font-family: 'Konsole Expanded Semibold', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   line-height: 31px;
   margin-bottom: 7px;
   text-transform: uppercase;
-  color: #707066;
 }
 
 h5 {
   margin-bottom: 5px;
-  color: #707066;
   text-transform: uppercase;
 }
 
 .headline {
-  line-height: 47px;
+  background: #1c3230;
+  color: #fbf8f8;
+  padding: 15px;
 }
 
 small,
 .font-small {
-  font-size: 14px;
+  color: #25453d;
+  font-size: 16px;
   line-height: 21px;
-  color: #707066;
 }
 
 .metadata {
   text-transform: uppercase;
+  color: #1c3230;
 }
 
 /* Basics */
 ul {
-  list-style: none;
+  list-style: inside;
 }
 
 li {
@@ -162,14 +120,14 @@ figcaption {
 
 /* Links */
 a {
-  color: #357331;
+  color: #0b1a17;
   text-decoration: underline;
 }
 a:visited {
-  color: #357331;
+  color: #0b1a17;
 }
 a:hover {
-  color: #1d4023;
+  color: #30a37a;
   text-decoration: underline;
 }
 
@@ -211,10 +169,14 @@ pre > code {
 }
 
 /* Layout */
-.header {
-  width: 100%;
-  height: 100px;
-  position: relative;
+.main {
+  padding-bottom: 0px;
+}
+
+@media (min-width: 500px) {
+  .main {
+    padding-bottom: 66px;
+  }
 }
 
 .container {
@@ -241,8 +203,34 @@ pre > code {
 
 @media (min-width: 900px) {
   .container > * {
-    grid-column: content-start / span 7;
+    grid-column: content-start / span 8;
   }
+}
+
+.home-title {
+  padding-top: 100px;
+  grid-row-start: 1;
+}
+
+.home-title h1 {
+  margin: 0;
+}
+
+.home-title p {
+  background: #fbf8f8;
+  padding: 15px 0;
+}
+
+@media (min-width: 500px) {
+  .home-title p {
+    padding: 15px;
+  }
+}
+
+.home-image {
+  grid-row-start: 1;
+  grid-column: 7 / edge-end;
+  max-height: 700px;
 }
 
 .full-container {
@@ -273,27 +261,12 @@ pre > code {
   list-style: none;
 }
 
-.list-columns .projects::before {
-  font-family: monospace;
-  content: '+';
-}
-
-.list-columns .posts::before {
-  font-family: monospace;
-  content: '–';
-}
-
-.list-columns .experiments::before {
-  font-family: monospace;
-  content: '>';
-}
-
 .list-columns li {
   margin-bottom: 8px;
 }
 
 .navigation {
-  grid-column: edge-start / edge-end;
+  grid-column: content-start / content-end;
   margin: 15px 0;
 }
 
@@ -313,9 +286,9 @@ pre > code {
 
 @media (min-width: 900px) {
   .post-title {
-    grid-column: content-start / 7;
+    grid-column: content-start / 8;
     grid-row-start: 1;
-    padding-top: 200px;
+    padding-top: 100px;
   }
 }
 
@@ -323,20 +296,8 @@ pre > code {
   margin: 12px 0;
 }
 
-.experiment-title {
-  grid-column: content-start / content-end;
-  padding-bottom: 31px;
-}
-
-@media (min-width: 900px) {
-  .experiment-title {
-    grid-column: content-start / 7;
-    grid-row-start: 1;
-  }
-}
-
-.experiment-title h1 {
-  margin: 0;
+.experiment {
+  padding-top: 0;
 }
 
 .post-image {
@@ -365,12 +326,6 @@ pre > code {
 .logo {
   height: 70px;
   position: relative;
-}
-
-@media (min-width: 1200px) {
-  .logo {
-    position: fixed;
-  }
 }
 
 canvas {

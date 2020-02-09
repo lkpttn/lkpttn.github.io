@@ -5,20 +5,19 @@
   </head>
 
   <body>
-    <div id="header" class="header">{% include navigation.html %}</div>
+    {% include navigation.html %}
     <div id="content">
       <div class="post-header container">
         {% if page.image %}
-        <figure class="post-image">
-          <img src="/assets/images/{{ page.image }}" alt="{{ page.title }}" />
-        </figure>
+          <figure class="post-image">
+            <img src="/assets/images/{{ page.image }}" alt="{{ page.title }}"/>
+          </figure>
         {% endif %}
 
         <div class="post-title">
           <h1 class="headline">{{ page.title }}</h1>
           <h5 class="font-small">
-            {{ page.date | date_to_long_string }} {% for tag in page.tags %} |
-            {{ tag }} {% endfor %}
+            {{ page.date | date_to_long_string }}
           </h5>
         </div>
       </div>
