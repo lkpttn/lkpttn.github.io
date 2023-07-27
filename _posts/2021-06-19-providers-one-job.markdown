@@ -12,4 +12,4 @@ FreshEBT allowed users to check their EBT balance and other government benefits 
 
 I was the lead designer for the project, redesigning the core user experience and implementing a new brand. The redesign increased app engagement by 50%, reaching 6 million MAUs.
 
-This case study is available upon request.
+[This case study is available upon request.](mailto:lkpttn@gmail.com)
