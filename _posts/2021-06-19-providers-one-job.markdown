@@ -3,7 +3,7 @@ layout: post
 title: 'Providers Redesign'
 date: 2021-06-19 23:40:28 -0400
 category: projects
-image: projects/providers/header.jpg
+image: projects/providers/header.png
 ---
 
 In 2021 Propel released a major update to it’s flagship product, FreshEBT. The app was becoming Providers - a singular destination for low income Americans to manage their finances.
