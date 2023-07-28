@@ -10,4 +10,4 @@ I was the Design Lead for Propel’s Earn team, focused on putting “dollars in
 
 During this time, I managed a team consisting of a researcher, visual designer, content designer and additional product designer.
 
-[This case study is available upon request.](mailto:lkpttn@gmail.com)
+[This case study is available upon request.](mailto:lkpttn@gmail.coms?subject=Portfolio)
