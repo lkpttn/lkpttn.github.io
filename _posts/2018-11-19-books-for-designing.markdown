@@ -2,7 +2,7 @@
 layout: post
 title: 'Books for Designing'
 date: 2018-11-19 17:40:28 -0400
-category: posts
+category: Posts
 ---
 
 ##### Update Nov. 2018

@@ -2,9 +2,10 @@
 layout: post
 title: 'Life of the Data Mind'
 date: 2014-04-14 17:40:28 -0400
-category: projects
+category: Projects
 tags: print data
 image: projects/datamind/header.jpg
+excerpt: My senior graphic design exhibition visualizing a year of personal data.
 ---
 
 Life of the Data Mind was a senior exhibit of art required for graduation.

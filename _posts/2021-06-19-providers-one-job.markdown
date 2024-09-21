@@ -2,7 +2,7 @@
 layout: post
 title: 'Providers Redesign'
 date: 2021-06-19 23:40:28 -0400
-category: projects
+category: Portfolio
 image: projects/providers/header.png
 ---
 

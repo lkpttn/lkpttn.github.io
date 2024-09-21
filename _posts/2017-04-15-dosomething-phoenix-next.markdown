@@ -2,7 +2,7 @@
 layout: post
 title: 'DoSomething.org Phoenix-Next'
 date: 2017-04-15 17:40:28 -0400
-category: projects
+category: Portfolio
 tags: web design
 image: projects/phoenix/header.jpg
 ---
