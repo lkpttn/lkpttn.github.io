@@ -28,7 +28,7 @@
   margin-left: 0;
   display: grid;
   grid-template-columns: 3fr repeat(4, auto);
-  column-gap: calc($spacing-unit/2);
+  column-gap: $spacing-unit * 0.5
 }
 
 .p-name {
@@ -86,7 +86,7 @@
   display: block;
 
   > li {
-    margin-bottom: calc($spacing-unit/2);
+    margin-bottom: $spacing-unit * 0.5);
   }
 }
 
