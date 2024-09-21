@@ -2,9 +2,10 @@
 layout: post
 title: 'Canvas Cards'
 date: 2019-02-21 17:40:28 -0400
-category: projects
+category: Projects
 tags: design javascript canvas
 image: projects/canvascards/header.jpg
+excerpt: A gallery of generative card designs created with JavaSript Canvas.
 ---
 
 [Canvas Cards](https://canvas-cards.glitch.me/) is a gallery of card designs created with javasript canvas. Updated every week in 2019, each card includes an editable code block where you can experiment with the code and tweak the design.

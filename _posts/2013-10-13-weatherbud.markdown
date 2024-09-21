@@ -2,9 +2,10 @@
 layout: post
 title: 'WeatherBud'
 date: 2013-10-13 17:40:28 -0400
-category: projects
+category: Projects
 tags: code design ios
 image: projects/weatherbud/header.jpg
+excerpt: My first iOS app, a minimal weather app.
 ---
 
 The summer that iOS 7 was announced I decided that I wanted to dip a toe into iOS development. As a visual designer, this presented quite a challenge.

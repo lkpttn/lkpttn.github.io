@@ -2,7 +2,7 @@
 layout: post
 title: 'Friend of Pixels 4.0'
 date: 2018-12-23 17:40:28 -0400
-category: posts
+category: Posts
 ---
 
 It seems like every fall, when the days start to get shorter and shorter, I get the itch to open up Pandora’s box and redesign my personal website. It’s a tradition now that the lazy days surrounding Christmas and New Years are filled with rapid google searching and StackOverflow skimming, trying to finesse media queries and sand down rough corners of content management systems.

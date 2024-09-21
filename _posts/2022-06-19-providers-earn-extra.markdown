@@ -2,7 +2,7 @@
 layout: post
 title: 'Providers Earn Extra'
 date: 2022-06-19 23:40:28 -0400
-category: projects
+category: Portfolio
 image: projects/earnextra/header.png
 ---
 
