@@ -2,7 +2,7 @@
 layout: post
 title: 'Citrus Design System'
 date: 2023-06-19 23:40:28 -0400
-category: projects
+category: Portfolio
 image: projects/citrus/header.png
 ---
 

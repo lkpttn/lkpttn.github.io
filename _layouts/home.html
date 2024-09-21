@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    {% include header.html %}
-  </head>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
 
   <body>
-    <div class="main container">
-      <div class="home-title">
-        <h1 class="headline">{{ page.headline }}</h1>
-        {{ content }}
-      </div>
-      {% for category in site.categories %}
-      <div class="column {{category[0]}}">
-        <h5 class="font-small">{{ category[0] }}</h5>
-        <ul class="list-columns">
-          {% for post in category[1] %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="font-small"> - {{ post.date | date: "%Y" }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="map-pattern">
-      <img
-        class="home-image"
-        src="/assets/images/selfie.png"
-        alt="{{ page.title }}"
-      />
-    </div>
-    {% include footer.html %}
+    <div class="home">
+      <main class="page-content" aria-label="Content">
 
-    <script src="/assets/canvas.js" type="text/javascript"></script>
+        <div class="header wrapper">
+          <h1 class="page-heading">Luke Patton is a Friend of Pixels</h1>
+          <h2 class="page-subtitle">I’m a designer, programmer and computer enthusiast in Queens, New York with more than 10 years of experience building products and systems that put people first.</h2>
+          <div class="page-body">{{ content }}</div>
+        </div>
+
+        <div class="wrapper">
+          <h3 class="post-list-heading">Personal Projects</h3>
+            <ul class="post-list">
+            {% for project in site.categories.Projects %}
+              <li class="list-grid">
+                <div class="list-date">{{ project.date | date: "%Y" }}</div>
+                <div>
+                  <h4 class="list-title"><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h4>
+                  <span class="list-excerpt">{{ project.excerpt }}</span>
+                </div>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="wrapper">
+          <h3 class="post-list-heading">Posts</h3>
+            <ul class="post-list">
+            {% for post in site.categories.Posts %}
+              <li class="list-grid">
+                <div class="list-date">{{ post.date | date: "%Y" }}</div>
+                <div>
+                  <h4 class="list-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+                </div>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
+        
+      </main>
+    </div>
+
+    {%- include footer.html -%}
+
   </body>
+
 </html>
+

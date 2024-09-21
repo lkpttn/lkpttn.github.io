@@ -1,0 +1,162 @@
+/**
+ * Site header
+ */
+.site-header {
+  min-height: $spacing-unit * 1.865;
+}
+
+.site-title {
+  font-family: $display-font-family;
+  @include relative-font-size(1.625);
+  line-height: $base-line-height * $base-font-size * 3;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  padding: $spacing-unit 0;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit * 0.5;
+}
+
+.footer-list {
+  list-style: none;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: 3fr repeat(4, auto);
+  column-gap: calc($spacing-unit/2);
+}
+
+.p-name {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+}
+
+.username {
+  @include relative-font-size(0.9375);
+}
+
+
+
+/**
+ * Page content
+ */
+
+.header {
+  padding-top: $spacing-unit * 3;
+  padding-bottom: $spacing-unit * 2;
+}
+
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+.page-heading {
+  font-family: $display-font-family;
+  @include relative-font-size(6);
+  line-height: 90%;
+  text-transform: uppercase;
+  padding-bottom: $spacing-unit;
+}
+
+.page-subtitle {
+  font-family: $display-font-family;
+  @include relative-font-size(2.5);
+  line-height: 110%;
+  padding-bottom: $spacing-unit;
+}
+
+.page-body {
+  font-family: $base-font-family;
+  color: $grey-color-light;
+}
+
+.post-list-heading {
+  @include relative-font-size(1);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  display: block;
+
+  > li {
+    margin-bottom: calc($spacing-unit/2);
+  }
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.list-title {
+  margin-bottom: 0;
+}
+
+.list-date {
+  color: $grey-color;
+}
+
+.list-excerpt {
+  color: $grey-color;
+  font-size: $small-font-size;
+}
+
+
+/**
+ * Posts
+ */
+.post-header {  
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-family: $display-font-family;
+  @include relative-font-size(6);
+  line-height: 90%;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-meta {
+  color: $grey-color;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  color: $grey-color-light;
+
+  h2 {
+    @include relative-font-size(1);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}

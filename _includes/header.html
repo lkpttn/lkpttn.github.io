@@ -1,33 +1,5 @@
-<meta charset="utf-8" />
-<title>{{ page.title }} | Friend of Pixels</title>
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
-<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
-<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
-<link href="/site.webmanifest" rel="manifest" />
-<link color="#000000" href="/safari-pinned-tab.svg" rel="mask-icon" />
-<meta content="#da532c" name="msapplication-TileColor" />
-<meta content="#ffffff" name="theme-color" />
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&family=Source+Sans+3:ital,wght@0,400;0,600;1,400;1,600&display=swap"
-  rel="stylesheet"
-/>
-
-<script type="text/javascript">
-  (function(l,e,a,p) {
-    if (window.Sprig) return;
-    window.Sprig = function(){S._queue.push(arguments)}
-    var S = window.Sprig;S.appId = a;S._queue = [];window.UserLeap=S;
-    a=l.createElement('script');
-    a.async=1;a.src=e+'?id='+S.appId;
-    p=l.getElementsByTagName('script')[0];
-    p.parentNode.insertBefore(a, p);
-  })(document, 'https://cdn.sprig.com/shim.js', '_09ZtaYnEWys');
-</script>
-
-<link href="/assets/reset.css" rel="stylesheet" />
-<link href="/assets/fonts.css" rel="stylesheet" />
-<link href="/assets/style.css" rel="stylesheet" />
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  </div>
+</header>
