@@ -5,7 +5,7 @@ date: 2026-03-07 17:40:28 -0400
 category: Posts
 ---
 
-##### Update Mar. 2026
+##### Update March 2026
 
 This list was originally written in 2015, but I've updated it a few times over the years. Graphic design and product design as industies have changed significantly in the last decade, and that pace has only accelerated with the advent of generative AI and LLMs.
 
